@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/95f2b5134f.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/95f2b5134f.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    
+    <section class="header">
+        <nav>
+            <img src="images/logo as2s.png" class="logo">
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+
+
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="person.html">Personalaties</a></li>
+                    <li><a href="cities.html">Cities</a></li>
+                    <li><a href="spots.html">Spots</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+
+        </nav>
+        <div class="header-text"><h1>Hi, I am <span>Rabia</h1></span></div>
+        </section>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/about-banner2.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia, non! Qui quaerat et fugiat ab maiores 
+                        possimus quasi,
+                         praesentium blanditiis deleniti similique veritatis optio aliquam tempora recusandae numquam amet?
+                          Itaque?</p>
+                          <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('education')">Education</p>
+                            <p class="tab-links" onclick="opentab('ambitions')">Ambitions</p>
+                            <p class="tab-links" onclick="opentab('hobbies')">Hobbies</p>
+                          </div>
+                          <div class="tab-contents active-tab" id="education">
+                            <ul>
+                            <li><span>Matric</span><br>Lorem ipsum dolor sit </li>
+                            <li><span>Intermediate</span><br>Lorem ipsum dolor sit </li>
+                            <li><span>BSCS</span><br>Lorem ipsum dolor sit </li>
+                        </ul>
+                          </div>
+                          <div class="tab-contents" id="ambitions">
+                            <ul>
+                            <li><span>Web Development</span><br>Lorem ipsum dolor sit </li>
+                            <li><span>Application Development</span><br>Lorem ipsum dolor sit </li>
+                            <li><span>Programming</span><br>Lorem ipsum dolor sit </li>
+                        </ul>
+                          </div>
+                          <div class="tab-contents" id="hobbies">
+                            <ul>
+                            <li><span>Photography</span><br>Lorem ipsum dolor sit </li>
+                            <li><span>Painting</span><br>Lorem ipsum dolor sit </li>
+                            <li><span>Baking</span><br>Lorem ipsum dolor sit </li>
+                        </ul>
+                          </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <div id="skills">
+        <div class="container">
+            <h1 class="sub-title">My Skills</h1>
+            <div class="skills-list">
+                <div>
+                    <i class="fa-brands fa-codepen"></i>
+                    <h2>Web Design</h2>
+                    <p>Lorem ipsum dolor sit consectetur adipisicing elit. Veniam 
+                        suscipit inventore magni
+                    </p>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store-ios"></i>
+                    <h2>App Design</h2>
+                    <p>Lorem ipsum dolor sit consectetur adipisicing elit. Veniam
+                        suscipit inventore magni
+                    </p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Programming</h2>
+                    <p>Lorem ipsum dolor sit consectetur adipisicing elit. Veniam 
+                        suscipit inventore magni
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        var tablinks=document.getElementsByClassName("tab-links");
+        var tabcontents=document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+    <footer>
+        <div class="footer-content">
+            <h3>Personal Portfolio</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+            <ul class="socials">
+                <li><a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="https://twitter.com/i/flow/login"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="https://support.google.com/answer/2451065?hl=en"><i class="fa fa-google-plus"></i></a></li>
+                <li><a href="https://www.youtube.com/"><i class="fa fa-youtube"></i></a></li>
+                <li><a href="https://www.linkedin.com/"><i class="fa fa-linkedin-square"></i></a></li>
+
+            </ul>
+    </footer>
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right="0";
+        }
+        function hideMenu(){
+            navLinks.style.right="-200px";
+        }
+
+    </script>
+</body>
+</html>

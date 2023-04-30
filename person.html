@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/95f2b5134f.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <section class="header1">
+        <nav>
+            <img src="images/logo as2s.png" class="logo">
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+
+
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="person.html">Personalaties</a></li>
+                    <li><a href="cities.html">Cities</a></li>
+                    <li><a href="spots.html">Spots</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+
+        </nav>
+        <div class="header-text1"><h1>My Favourite <span>Personalaties</h1></span></div>
+        </section>
+       <section>
+        <div class="title">
+            <h1>Favourite Personalaties</h1>
+            <div class="line">
+            <p>-----------------------------------------------------</p>
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam at praesentium amet deleniti temporibus aliquid culpa</p>
+        </div>
+       </section>
+       <section class="pers">
+        <div class="best">
+            <div class="identity">
+                <img src="images/malalaa.jpeg" width="220" height="200">
+            <h3>Malala Yousafzai</h3>
+            <p>Sed consectetur leo ut magna <br> consectetur hendrerit. Ut non libero sit amet <br> accumsan faucibus.
+                 Nulla mattis, velit</p>
+                 <a href="https://en.wikipedia.org/wiki/Malala_Yousafzai" class="btn1">Learn More</a>
+            </div>
+                <div class="identity">
+                    <img src="images/ALI1.jpeg" width="220" height="200">
+                    <h3>Muhammad Ali</h3>
+                    <p>Sed consectetur leo ut magna <br> consectetur hendrerit. Ut non libero sit amet <br> accumsan faucibus.
+                         Nulla mattis, velit</p>
+                         <a href="https://en.wikipedia.org/wiki/Muhammad_Ali" class="btn1">Learn More</a>
+                </div>
+                <div class="identity">
+                    <img src="images/abdul.jpeg" width="220" height="200">
+                    <h3>Abdul Sattar Edhi</h3>
+                    <p>Sed consectetur leo ut magna <br> consectetur hendrerit. Ut non libero sit amet <br> accumsan faucibus.
+                         Nulla mattis, velit</p>
+                         <a href="https://en.wikipedia.org/wiki/Abdul_Sattar_Edhi" class="btn1">Learn More</a>
+                </div>
+            </div>
+            <div class="best2">
+                                <div class="identity">
+                                    <img src="images/emma.jpeg" width="220" height="200">
+                                    <h3>Emma Watson</h3>
+                                    <p>Sed consectetur leo ut magna <br> consectetur hendrerit. Ut non libero sit amet <br> accumsan faucibus.
+                                         Nulla mattis, velit</p>
+                                         <a href="https://en.wikipedia.org/wiki/Emma_Watson" class="btn1">Learn More</a>
+                                </div>
+                                <div class="identity">
+                            <img src="images/neymar.jpeg" width="220" height="200">
+                            <h3>Neymar JR</h3>
+                            <p>Sed consectetur leo ut magna <br> consectetur hendrerit. Ut non libero sit amet <br> accumsan faucibus.
+                                 Nulla mattis, velit</p>
+                                 <a href="https://en.wikipedia.org/wiki/Neymar" class="btn1">Learn More</a>
+                        </div>
+                        <div class="identity">
+                            <img src="images/justin2.jpeg" width="220" height="200">
+                            <h3>Justin Trudeau</h3>
+                            <p>Sed consectetur leo ut magna <br> consectetur hendrerit. Ut non libero sit amet <br> accumsan faucibus.
+                                 Nulla mattis, velit</p>
+                                 <a href="https://en.wikipedia.org/wiki/Justin_Trudeau" class="btn1">Learn More</a>
+                        </div>
+                                    
+
+                                        
+                         </div>
+            
+        
+       
+    </section>
+    <footer>
+        <div class="footer-content">
+            <h3>Personal Portfolio</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+            <ul class="socials">
+                <li><a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="https://twitter.com/i/flow/login"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="https://support.google.com/answer/2451065?hl=en"><i class="fa fa-google-plus"></i></a></li>
+                <li><a href="https://www.youtube.com/"><i class="fa fa-youtube"></i></a></li>
+                <li><a href="https://www.linkedin.com/"><i class="fa fa-linkedin-square"></i></a></li>
+
+            </ul>
+    </footer>
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right="0";
+        }
+        function hideMenu(){
+            navLinks.style.right="-200px";
+        }
+
+    </script>
+        </body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/95f2b5134f.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <section class="header3">
+        <nav>
+            <img src="images/logo as2s.png" class="logo">
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+
+
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="person.html">Personalaties</a></li>
+                    <li><a href="cities.html">Cities</a></li>
+                    <li><a href="spots.html">Spots</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+
+        </nav>
+        </section>
+        <div id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class="sub-title">Contact Me</h1>
+                        <p><i class="fa-sharp fa-solid fa-paper-plane"></i>contact@example.com</p>
+                        <p><i class="fa-sharp fa-solid fa-square-phone"></i>0123456789</p>
+
+                    </div>
+                    <div class="contact-right">
+                        <form>
+                            <input type="text" name="Name" placeholder="Your Name" required>
+                            <input type="email" name="Email" placeholder="Your Email" required>
+                            <textarea name="message" rows="6" placeholder="Your Message"></textarea>
+                            <button type="submit" class="btn btn2">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="footer-content">
+                <h3>Personal Portfolio</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                <ul class="socials">
+                    <li><a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="https://twitter.com/i/flow/login"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="https://support.google.com/answer/2451065?hl=en"><i class="fa fa-google-plus"></i></a></li>
+                    <li><a href="https://www.youtube.com/"><i class="fa fa-youtube"></i></a></li>
+                    <li><a href="https://www.linkedin.com/"><i class="fa fa-linkedin-square"></i></a></li>
+    
+                </ul>
+        </footer>
+        <script>
+            var navLinks = document.getElementById("navLinks");
+            function showMenu(){
+                navLinks.style.right="0";
+            }
+            function hideMenu(){
+                navLinks.style.right="-200px";
+            }
+    
+        </script>
+    </body>
+    </html>
